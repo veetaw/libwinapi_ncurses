@@ -5,7 +5,7 @@
 #endif
 
 #include "wrapper.h"
-#include "colors.h"
+#include "Color.h"
 
 /* \brief Initial configurations to setup the screen
  *
@@ -64,8 +64,20 @@ void move_cursor(int x, int y) {
     #endif
 }
 
-void change_color() {
-
+/* \brief changes text color
+ *
+ * ncurses:
+ * Creates a new pair, overriding the first
+ * and using always black as background.
+ *
+ * @param color Color from colors.h
+ */
+void change_color(Color color) {
+    #ifdef __linux__
+        init_pair(1, color, COLOR_BLACK);
+    #elif _WIN32
+        // todo
+    #endif
 }
 
 /* \brief Refreshes screen
