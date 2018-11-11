@@ -1,4 +1,4 @@
-#include "library.h"
+#include "wrapper.h"
 #ifdef __linux__
     #include <curses.h>
 #elif _WIN32
