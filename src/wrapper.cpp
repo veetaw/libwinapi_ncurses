@@ -1,18 +1,18 @@
 #ifdef __linux__
     #include <curses.h>
+    #include <unistd.h>
 #elif _WIN32
     #include "" // todo include winapi
 #endif
 
 #include "wrapper.h"
-#include "Color.h"
 
 /* \brief Initial configurations to setup the screen
  *
  * ncurses:
  * The function sets up a new ncurses screen and calls
  * some ncurses functions in order to suppress the echoing
- * of the pressed keys and to enable special keys like arrows.
+ * of the pressed keys, hiding cursor and to enable special keys like arrows.
  *
  * winAPI:
  * no setup needed.
@@ -22,6 +22,7 @@ void screen_setup() {
         initscr();
         start_color();
         noecho();
+        curs_set(0);
         keypad(stdscr, true);
     #elif _WIN32
         // no setup needed
@@ -72,9 +73,13 @@ void move_cursor(int x, int y) {
  *
  * @param color Color from colors.h
  */
-void change_color(Color color) {
+void change_color(short color) {
     #ifdef __linux__
-        init_pair(1, color, COLOR_BLACK);
+        if(has_colors()) {
+            // workaround: use color as color pair id because it must be different for every pair
+            init_pair(color , color, COLOR_BLACK);
+            attron(COLOR_PAIR(color));
+        }
     #elif _WIN32
         // todo
     #endif
@@ -123,4 +128,14 @@ void close_window() {
     #endif
 }
 
-
+/* \brief cross platform sleep
+ *
+ * @param ms milliseconds to sleep
+ */
+void _sleep(unsigned int ms) {
+    #ifdef __linux__
+        usleep(ms * 1000);
+    #elif _WIN32
+        // todo
+    #endif
+}
