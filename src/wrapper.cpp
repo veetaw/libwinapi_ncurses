@@ -66,18 +66,47 @@ void change_color() {
 
 }
 
-// todo doc
-// every function that modifies ui must call this
+/* \brief Refreshes screen
+ *
+ * ncurses:
+ * this function must be called every action that modifies the ui, like printing.
+ */
 void refresh_screen() {
-
+    #ifdef __linux__
+        wrefresh(stdscr);
+    #elif _WIN32
+        // todo
+    #endif
 }
 
+/* \brief Fill screen with blank characters.
+ *
+ * ncurses:
+ * The method calls clear() that fills screen with blank
+ * characters and ensures that on the next refresh the
+ * windows is repainted from zero.
+ */
 void clear_screen() {
+    #ifdef __linux__
+        clear();
+    #elif _WIN32
+        // todo
+    #endif
 
+    refresh_screen();
 }
 
+/* \brief Clears garbage and closes window
+ *
+ * winAPI:
+ * no actions needed.
+ */
 void close_window() {
-
+    #ifdef __linux__
+        endwin();
+    #elif _WIN32
+        // todo
+    #endif
 }
 
 
