@@ -3,4 +3,4 @@ project(winapi_ncurses)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_library(winapi_ncurses src/wrapper.cpp src/wrapper.h src/color.h)
+add_library(winapi_ncurses SHARED src/wrapper.cpp src/wrapper.h src/color.h)
