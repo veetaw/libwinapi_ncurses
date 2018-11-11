@@ -1,9 +1,11 @@
-#include "wrapper.h"
 #ifdef __linux__
     #include <curses.h>
 #elif _WIN32
     #include "" // todo include winapi
 #endif
+
+#include "wrapper.h"
+#include "colors.h"
 
 /* \brief Initial configurations to setup the screen
  *
