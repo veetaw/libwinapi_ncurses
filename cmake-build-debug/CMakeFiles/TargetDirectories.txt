@@ -1,0 +1,3 @@
+/home/me/CLionProjects/winapi-ncurses/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/me/CLionProjects/winapi-ncurses/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/me/CLionProjects/winapi-ncurses/cmake-build-debug/CMakeFiles/winapi_ncurses.dir

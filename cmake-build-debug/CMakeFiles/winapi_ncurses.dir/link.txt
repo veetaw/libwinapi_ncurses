@@ -1,0 +1,2 @@
+/usr/bin/ar qc libwinapi_ncurses.a  CMakeFiles/winapi_ncurses.dir/library.cpp.o
+/usr/bin/ranlib libwinapi_ncurses.a
