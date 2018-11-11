@@ -1,10 +1,10 @@
 # Simple and minimal wrapper over ncurses and winAPI
 > ## WIP
 
-###Examples:
+### Examples:
 
 <h5>print strings to term</h5>
-```cpp
+```
 screen_setup();
 const char* c_string = "c string";
 std::string cpp_string = "c++ string";
@@ -17,7 +17,7 @@ close_window();
 ```
 
 <h5>print colored strings to term</h5>
-```cpp
+```
 ...
 
 Color color = Color();
