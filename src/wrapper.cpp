@@ -49,8 +49,17 @@ void print(int x, int y, const char *string) {
     refresh_screen();
 }
 
+/* \brief Moves cursor.
+ *
+ * @param x x axis coord
+ * @param y y axis coord
+ */
 void move_cursor(int x, int y) {
-
+    #ifdef __linux__
+        wmove(stdscr, y, x);
+    #elif _WIN32
+        // todo
+    #endif
 }
 
 void change_color() {
