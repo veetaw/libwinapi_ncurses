@@ -2,26 +2,28 @@
 
 #ifndef WINAPI_NCURSES_COLORS_H
 #define WINAPI_NCURSES_COLORS_H
-    // my attempt to make predefined Color "cross platform"
+    // my attempt to make predefined colors "cross platform"
     #ifdef __linux__
-        enum Color {
-            black = COLOR_BLACK,
-            blue = COLOR_BLUE,
-            red = COLOR_RED,
-            green = COLOR_GREEN,
-            yellow = COLOR_YELLOW,
-            magenta = COLOR_MAGENTA,
-            white = COLOR_WHITE,
+        class Color {
+        public:
+            short black = COLOR_BLACK;
+            short blue = COLOR_BLUE;
+            short red = COLOR_RED;
+            short green = COLOR_GREEN;
+            short yellow = COLOR_YELLOW;
+            short magenta = COLOR_MAGENTA;
+            short white = COLOR_WHITE;
         };
     #elif _WIN32
-        enum Color {
-                black = 0,
-                blue = 1,
-                red = 4,
-                green = 2,
-                yellow = 14,
-                magenta = 5,
-                white = 15,
+        class Color {
+        public:
+            short black = 0;
+            short blue = 1;
+            short red = 4;
+            short green = 2;
+            short yellow = 14;
+            short magenta = 5;
+            short white = 15;
         };
     #endif
 #endif //WINAPI_NCURSES_COLORS_H
