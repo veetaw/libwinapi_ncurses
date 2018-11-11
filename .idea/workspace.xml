@@ -12,8 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c4c3aff-7b72-44e9-a41f-5ba27aae0305" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wrapper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrapper.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +35,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="conf" value="269" />
-          <entry key="cpp" value="5247" />
+          <entry key="cpp" value="5876" />
           <entry key="gitignore" value="10" />
           <entry key="h" value="635" />
           <entry key="md" value="329" />
@@ -46,10 +45,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="23" />
-          <entry key="Doxygen file" value="3" />
+          <entry key="Doxygen file" value="6" />
           <entry key="Git file" value="10" />
           <entry key="Markdown" value="329" />
-          <entry key="ObjectiveC" value="5879" />
+          <entry key="ObjectiveC" value="6505" />
           <entry key="PLAIN_TEXT" value="269" />
         </counts>
       </usages-collector>
@@ -94,53 +93,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wrapper.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2337">
-              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="125">
+              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
               <folding>
                 <element signature="e#21#40#0" expanded="true" />
-                <element signature="e#58#92#0" expanded="true" />
-                <element signature="e#982#1000#0" expanded="true" />
-                <element signature="e#1529#1536#0" expanded="true" />
-                <element signature="e#1763#1770#0" expanded="true" />
-                <element signature="e#1496#1503#0" expanded="true" />
-                <element signature="e#2035#2042#0" expanded="true" />
-                <element signature="e#2353#2360#0" expanded="true" />
-                <element signature="e#2567#2574#0" expanded="true" />
-                <element signature="e#2818#2825#0" expanded="true" />
+                <element signature="e#82#126#0" expanded="true" />
+                <element signature="e#633#648#0" expanded="true" />
+                <element signature="e#1201#1245#0" expanded="true" />
+                <element signature="e#1411#1438#0" expanded="true" />
+                <element signature="e#2037#2063#0" expanded="true" />
+                <element signature="e#2482#2740#0" expanded="true" />
+                <element signature="e#3177#3192#0" expanded="true" />
+                <element signature="e#3384#3392#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="426">
-                <caret line="21" selection-start-line="21" selection-end-line="21" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doxygen.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -174,19 +142,19 @@
         <option value="$PROJECT_DIR$/src/wrapper.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/color.h" />
-        <option value="$PROJECT_DIR$/src/wrapper.cpp" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.doc/doxygen.conf" />
         <option value="$PROJECT_DIR$/doxygen.conf" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/wrapper.cpp" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="49" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="984" />
     <option name="y" value="30" />
-    <option name="width" value="1871" />
+    <option name="width" value="936" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -260,12 +228,12 @@
       <option name="presentableId" value="Default" />
       <updated>1541918345121</updated>
       <workItem from="1541918354797" duration="920000" />
-      <workItem from="1541919459123" duration="16739000" />
+      <workItem from="1541919459123" duration="18173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17659000" />
+    <option name="totallyTimeSpent" value="19093000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -277,13 +245,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="30" width="1871" height="1050" extended-state="6" />
+    <frame x="984" y="30" width="936" height="1050" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1878089" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1878089" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32964602" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32964602" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32964602" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -301,6 +269,28 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1878089" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32964602" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32964602" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32964602" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49972543" weight="0.2721239" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002746" side_tool="true" weight="0.33075222" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.32964602" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
@@ -374,22 +364,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wrapper.cpp">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2337">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="e#21#40#0" expanded="true" />
-            <element signature="e#58#92#0" expanded="true" />
-            <element signature="e#982#1000#0" expanded="true" />
-            <element signature="e#1529#1536#0" expanded="true" />
-            <element signature="e#1763#1770#0" expanded="true" />
-            <element signature="e#1496#1503#0" expanded="true" />
-            <element signature="e#2035#2042#0" expanded="true" />
-            <element signature="e#2353#2360#0" expanded="true" />
-            <element signature="e#2567#2574#0" expanded="true" />
-            <element signature="e#2818#2825#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="111">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doxygen.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -403,17 +388,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doxygen.conf">
+    <entry file="file://$PROJECT_DIR$/src/wrapper.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="125">
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+          <folding>
+            <element signature="e#21#40#0" expanded="true" />
+            <element signature="e#82#126#0" expanded="true" />
+            <element signature="e#633#648#0" expanded="true" />
+            <element signature="e#1201#1245#0" expanded="true" />
+            <element signature="e#1411#1438#0" expanded="true" />
+            <element signature="e#2037#2063#0" expanded="true" />
+            <element signature="e#2482#2740#0" expanded="true" />
+            <element signature="e#3177#3192#0" expanded="true" />
+            <element signature="e#3384#3392#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

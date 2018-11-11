@@ -2,7 +2,8 @@
     #include <curses.h>
     #include <unistd.h>
 #elif _WIN32
-    #include "" // todo include winapi
+    #include <windows.h>
+    #include <iostream>
 #endif
 
 #include "wrapper.h"
@@ -15,7 +16,7 @@
  * of the pressed keys, hiding cursor and to enable special keys like arrows.
  *
  * winAPI:
- * no setup needed.
+ * no setup needed, just clear the screen.
  */
 void screen_setup() {
     #ifdef __linux__
@@ -25,7 +26,7 @@ void screen_setup() {
         curs_set(0);
         keypad(stdscr, true);
     #elif _WIN32
-        // no setup needed
+        clear_screen();
     #endif
 }
 
@@ -46,7 +47,8 @@ void print(int x, int y, const char *string) {
         move_cursor(x, y);
         waddstr(stdscr, string);
     #elif _WIN32
-        // todo
+        move_cursor(x, y);
+        std::cout << str;
     #endif
 
     refresh_screen();
@@ -61,7 +63,7 @@ void move_cursor(int x, int y) {
     #ifdef __linux__
         wmove(stdscr, y, x);
     #elif _WIN32
-        // todo
+        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), (COORD) {0, 0});
     #endif
 }
 
@@ -81,7 +83,7 @@ void change_color(short color) {
             attron(COLOR_PAIR(color));
         }
     #elif _WIN32
-        // todo
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
     #endif
 }
 
@@ -89,12 +91,14 @@ void change_color(short color) {
  *
  * ncurses:
  * this function must be called every action that modifies the ui, like printing.
+ *
+ * winAPI:
+ * no actions needed.
  */
 void refresh_screen() {
     #ifdef __linux__
         wrefresh(stdscr);
     #elif _WIN32
-        // todo
     #endif
 }
 
@@ -109,7 +113,15 @@ void clear_screen() {
     #ifdef __linux__
         clear();
     #elif _WIN32
-        // todo
+        FillConsoleOutputCharacter(
+                GetStdHandle(STD_OUTPUT_HANDLE),
+                csbi.wAttributes,
+                csbi.dwSize.X * csbi.dwSize.Y,
+                (COORD) {0, 0},
+                NULL
+         );
+
+        move_cursor(0, 0);
     #endif
 
     refresh_screen();
@@ -118,13 +130,13 @@ void clear_screen() {
 /*!\brief Clears garbage and closes window
  *
  * winAPI:
- * no actions needed.
+ * no actions needed, so just clear the screen.
  */
 void close_window() {
     #ifdef __linux__
         endwin();
     #elif _WIN32
-        // todo
+        clear_screen();
     #endif
 }
 
@@ -136,6 +148,6 @@ void _sleep(unsigned int ms) {
     #ifdef __linux__
         usleep(ms * 1000);
     #elif _WIN32
-        // todo
+        sleep(ms);
     #endif
 }
