@@ -46,3 +46,4 @@ CTestTestfile.cmake
 .idea/dictionaries/
 .idea/vcs.xml
 cmake-build-debug/
+.doc/
