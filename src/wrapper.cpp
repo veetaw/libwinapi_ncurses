@@ -7,7 +7,7 @@
 
 #include "wrapper.h"
 
-/* \brief Initial configurations to setup the screen
+/*!\brief Initial configurations to setup the screen
  *
  * ncurses:
  * The function sets up a new ncurses screen and calls
@@ -29,7 +29,7 @@ void screen_setup() {
     #endif
 }
 
-/* \brief Print string to screen
+/*!\brief Print string to screen
  *
  * ncurses, winapi:
  * The function moves the cursor (x, y) and then prints
@@ -52,7 +52,7 @@ void print(int x, int y, const char *string) {
     refresh_screen();
 }
 
-/* \brief Moves cursor.
+/*!\brief Moves cursor.
  *
  * @param x x axis coord
  * @param y y axis coord
@@ -65,7 +65,7 @@ void move_cursor(int x, int y) {
     #endif
 }
 
-/* \brief changes text color
+/*!\brief changes text color
  *
  * ncurses:
  * Creates a new pair, overriding the first
@@ -85,7 +85,7 @@ void change_color(short color) {
     #endif
 }
 
-/* \brief Refreshes screen
+/*!\brief Refreshes screen
  *
  * ncurses:
  * this function must be called every action that modifies the ui, like printing.
@@ -98,7 +98,7 @@ void refresh_screen() {
     #endif
 }
 
-/* \brief Fill screen with blank characters.
+/*!\brief Fill screen with blank characters.
  *
  * ncurses:
  * The method calls clear() that fills screen with blank
@@ -115,7 +115,7 @@ void clear_screen() {
     refresh_screen();
 }
 
-/* \brief Clears garbage and closes window
+/*!\brief Clears garbage and closes window
  *
  * winAPI:
  * no actions needed.
@@ -128,7 +128,7 @@ void close_window() {
     #endif
 }
 
-/* \brief cross platform sleep
+/*!\brief cross platform sleep
  *
  * @param ms milliseconds to sleep
  */
