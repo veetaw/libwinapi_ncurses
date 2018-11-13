@@ -148,6 +148,6 @@ void _sleep(unsigned int ms) {
     #ifdef __linux__
         usleep(ms * 1000);
     #elif _WIN32
-        sleep(ms);
+        Sleep(ms);
     #endif
 }
