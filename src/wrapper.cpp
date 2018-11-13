@@ -113,6 +113,8 @@ void clear_screen() {
     #ifdef __linux__
         clear();
     #elif _WIN32
+	CONSOLE_SCREEN_BUFFER_INFO csbi;
+	GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
         FillConsoleOutputCharacter(
                 GetStdHandle(STD_OUTPUT_HANDLE),
                 csbi.wAttributes,
