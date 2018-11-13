@@ -3,10 +3,16 @@ project(winapi_ncurses)
 
 set(CMAKE_CXX_STANDARD 14)
 
-find_package(Curses REQUIRED)
-include_directories(${CURSES_INCLUDE_DIR})
+if(UNIX AND NOT APPLE) # can't test if it works on mac os
+    message(STATUS "Linux detected.")
+    find_package(Curses REQUIRED)
+    include_directories(${CURSES_INCLUDE_DIR})
 
-add_library(winapi_ncurses SHARED src/wrapper.cpp src/wrapper.h src/color.h)
+    add_library(winapi_ncurses SHARED src/wrapper.cpp src/wrapper.h src/color.h)
 
-target_link_libraries(winapi_ncurses ${CURSES_LIBRARIES})
+    target_link_libraries(winapi_ncurses ${CURSES_LIBRARIES})
+elseif(MSVC OR MSYS OR MINGW)
+    message(STATUS "Windows detected.")
 
+    add_library(winapi_ncurses SHARED src/wrapper.cpp src/wrapper.h src/color.h)
+endif()
