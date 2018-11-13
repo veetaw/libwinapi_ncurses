@@ -3,6 +3,7 @@
     #include <unistd.h>
 #elif _WIN32
     #include <windows.h>
+    #include <conio.h>
     #include <iostream>
 #endif
 
@@ -151,5 +152,22 @@ void _sleep(unsigned int ms) {
         usleep(ms * 1000);
     #elif _WIN32
         Sleep(ms);
+    #endif
+}
+
+/*!\brief get an int from input
+ *
+ * ncurses:
+ * wrap getch from ncurses lib
+ *
+ * winapi
+ * wrap _getch from conio.h
+ */
+int input() {
+    #ifdef __linux__
+        return getch();
+    #elif _WIN32
+        if(_kbhit())
+            return _getch();
     #endif
 }
