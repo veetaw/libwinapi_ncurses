@@ -1,4 +1,6 @@
-#include <curses.h>
+#ifdef __linux__
+	#include <curses.h>
+#endif
 
 #ifndef WINAPI_NCURSES_COLORS_H
 #define WINAPI_NCURSES_COLORS_H
