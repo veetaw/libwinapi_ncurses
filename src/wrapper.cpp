@@ -48,7 +48,7 @@ void print(int x, int y, const char *string) {
         waddstr(stdscr, string);
     #elif _WIN32
         move_cursor(x, y);
-        std::cout << str;
+        std::cout << string;
     #endif
 
     refresh_screen();
