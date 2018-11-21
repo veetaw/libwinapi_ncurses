@@ -29,20 +29,21 @@
     <session id="71465911">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="conf" value="269" />
-          <entry key="cpp" value="6238" />
+          <entry key="cpp" value="6248" />
           <entry key="gitignore" value="10" />
-          <entry key="h" value="647" />
+          <entry key="h" value="652" />
           <entry key="md" value="329" />
           <entry key="txt" value="295" />
         </counts>
@@ -53,7 +54,7 @@
           <entry key="Doxygen file" value="6" />
           <entry key="Git file" value="10" />
           <entry key="Markdown" value="329" />
-          <entry key="ObjectiveC" value="6879" />
+          <entry key="ObjectiveC" value="6894" />
           <entry key="PLAIN_TEXT" value="269" />
         </counts>
       </usages-collector>
@@ -92,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wrapper.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="138">
+              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -101,11 +102,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wrapper.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="313">
+              <caret line="166" column="20" lean-forward="true" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="20" />
               <folding>
                 <element signature="e#21#40#0" expanded="true" />
-                <element signature="e#3742#3783#0" expanded="true" />
+                <element signature="e#3737#3753#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,7 +150,7 @@
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="984" />
     <option name="y" value="30" />
     <option name="width" value="936" />
@@ -228,12 +229,13 @@
       <workItem from="1541918354797" duration="920000" />
       <workItem from="1541919459123" duration="18445000" />
       <workItem from="1542097484298" duration="1003000" />
-      <workItem from="1542114619445" duration="896000" />
+      <workItem from="1542114619445" duration="1222000" />
+      <workItem from="1542786411610" duration="64000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21264000" />
+    <option name="totallyTimeSpent" value="21654000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -248,7 +250,7 @@
     <frame x="49" y="30" width="1871" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1900055" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19220209" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -259,7 +261,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32964602" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49972543" visible="true" weight="0.27323008" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49972543" visible="true" weight="0.27433628" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002746" side_tool="true" weight="0.33075222" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32964602" />
@@ -341,18 +343,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wrapper.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="138">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wrapper.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="313">
+          <caret line="166" column="20" lean-forward="true" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="20" />
           <folding>
             <element signature="e#21#40#0" expanded="true" />
-            <element signature="e#3742#3783#0" expanded="true" />
+            <element signature="e#3737#3753#0" expanded="true" />
           </folding>
         </state>
       </provider>

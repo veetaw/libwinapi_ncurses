@@ -163,11 +163,10 @@ void _sleep(unsigned int ms) {
  * winapi
  * wrap _getch from conio.h
  */
-int input() {
+int raw_input() {
     #ifdef __linux__
         return getch();
     #elif _WIN32
-        if(_kbhit())
-            return _getch();
+        return _getch();
     #endif
 }
