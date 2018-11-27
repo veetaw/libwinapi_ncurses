@@ -11,4 +11,5 @@
     void close_window();
     void _sleep(unsigned int ms);
     int raw_input();
+    int input();
 #endif // WINAPI_NCURSES_LIBRARY_H

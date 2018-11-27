@@ -9,6 +9,7 @@
 #endif
 
 #include "wrapper.h"
+#include "keys.h"
 
 /*!\brief Initial configurations to setup the screen
  *
@@ -182,5 +183,45 @@ int raw_input() {
         return getch();
     #elif _WIN32
         return _getch();
+    #endif
+}
+
+int input() {
+    int ch = raw_input();
+    #ifdef __linux__
+        switch(ch) {
+            case 258: /* arrow down */
+                return ARROW_DOWN;
+            case 259: /* arrow up */
+                return ARROW_UP;
+            case 260: /* arrow left */
+                return ARROW_LEFT;
+            case 261: /* arrow right */
+                return ARROW_RIGHT;
+            case 27: /* escape key */
+                return ESC_KEY;
+            default: /* other characters such as letters */
+                return ch;
+        }
+    #elif _WIN32
+        if(ch == 224) { /* mingw escape */
+            int k = raw_input();
+            switch(k) {
+                case 80: /* arrow down */
+                    return ARROW_DOWN;
+                case 72: /* arrow up */
+                    return ARROW_UP;
+                case 75: /* arrow left */
+                    return ARROW_LEFT;
+                case 77: /* arrow right */
+                    return ARROW_RIGHT;
+                default: /* ??? */
+                    return -1;
+            }
+        } else if(ch == 27) { /* escape key */
+            return ESC_KEY;
+        } else { /* other characters such as letters */
+            return ch;
+        }
     #endif
 }

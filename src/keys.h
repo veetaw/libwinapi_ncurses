@@ -1,0 +1,10 @@
+#ifndef WINAPI_NCURSES_KEYS_H
+#define WINAPI_NCURSES_KEYS_H
+
+    #define ESC_KEY 1000000
+    #define ARROW_UP 1000001
+    #define ARROW_DOWN 1000002
+    #define ARROW_LEFT 1000003
+    #define ARROW_RIGHT 1000004
+
+#endif //WINAPI_NCURSES_KEYS_H
