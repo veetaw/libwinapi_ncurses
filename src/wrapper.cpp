@@ -35,7 +35,7 @@ void screen_setup() {
 
 /*!\brief Print string to screen
  *
- * ncurses, winapi:
+ * ncurses, winAPI:
  * The function moves the cursor (x, y) and then prints
  * to the screen the string starting from S(x, y) to
  * E(x+length(string), y)
@@ -60,6 +60,10 @@ void print(int x, int y, const char *string) {
 }
 
 /*!\brief Moves cursor.
+ *
+ * winAPI:
+ * coordinates need to be short, so the function checks if
+ * the coord is greater than the maximum short value to prevent overflows
  *
  * @param x x axis coord
  * @param y y axis coord
@@ -119,6 +123,10 @@ void refresh_screen() {
  * The method calls clear() that fills screen with blank
  * characters and ensures that on the next refresh the
  * window is repainted from zero.
+ *
+ * winAPI:
+ * Fill console with spaces
+ *
  */
 void clear_screen() {
     #ifdef __linux__
@@ -150,6 +158,9 @@ void clear_screen() {
 
 /*!\brief Clears garbage and closes window
  *
+ * ncurses:
+ * call the endwin function
+ *
  * winAPI:
  * no actions needed, so just clear the screen.
  */
@@ -178,7 +189,7 @@ void _sleep(unsigned int ms) {
  * ncurses:
  * wrap getch from ncurses lib
  *
- * winapi
+ * winAPI
  * wrap _getch from conio.h
  */
 int raw_input() {
@@ -189,6 +200,8 @@ int raw_input() {
     #endif
 }
 
+/*!\brief handle some special keys
+ */
 int input() {
     int ch = raw_input();
     #ifdef __linux__
