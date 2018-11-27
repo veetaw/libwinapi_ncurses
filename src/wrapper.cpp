@@ -73,7 +73,7 @@ bool move_cursor(int x, int y) {
     #elif _WIN32
         if(x > SHRT_MAX || y > SHRT_MAX)
             return false; /* overflow detected */
-        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), (COORD) {(unsigned short) x, (unsigned short) y});
+        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), (COORD) {(short) x, (short) y});
         return true;
     #endif
 }
