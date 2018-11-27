@@ -1,3 +1,5 @@
+#include <climits>
+
 #ifdef __linux__
     #include <curses.h>
     #include <unistd.h>
@@ -64,7 +66,9 @@ void move_cursor(int x, int y) {
     #ifdef __linux__
         wmove(stdscr, y, x);
     #elif _WIN32
-        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), (COORD) {0, 0});
+        if(x > SHRT_MAX || y > SHRT_MAX)
+            return /* overflow detected, just don't do anything */
+        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), (COORD) {(short) x, (short) y})
     #endif
 }
 
