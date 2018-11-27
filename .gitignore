@@ -43,7 +43,6 @@ CTestTestfile.cmake
 *.out
 *.app
 
-.idea/dictionaries/
-.idea/vcs.xml
+.idea/
 cmake-build-debug/
 .doc/
