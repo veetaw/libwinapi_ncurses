@@ -49,7 +49,8 @@ void print(unsigned int x, unsigned int y, const char *string) {
         move_cursor(x, y);
         waddstr(stdscr, string);
     #elif _WIN32
-        move_cursor(x, y);
+        if(!move_cursor(x, y)) /* something wrong happened in move_cursor */
+            return;
         std::cout << string;
     #endif
 
@@ -61,13 +62,15 @@ void print(unsigned int x, unsigned int y, const char *string) {
  * @param x x axis coord
  * @param y y axis coord
  */
-void move_cursor(unsigned int x, unsigned int y) {
+bool move_cursor(unsigned int x, unsigned int y) {
     #ifdef __linux__
         wmove(stdscr, y, x);
+        return true;
     #elif _WIN32
         if(x > SHRT_MAX || y > SHRT_MAX)
-            return; /* overflow detected, just don't do anything */
+            return false; /* overflow detected */
         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), (COORD) {(unsigned short) x, (unsigned short) y});
+        return true;
     #endif
 }
 
