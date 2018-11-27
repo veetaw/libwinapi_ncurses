@@ -13,7 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6c4c3aff-7b72-44e9-a41f-5ba27aae0305" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wrapper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrapper.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wrapper.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrapper.h" afterDir="false" />
     </list>
@@ -45,9 +44,9 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="conf" value="269" />
-          <entry key="cpp" value="7867" />
+          <entry key="cpp" value="7930" />
           <entry key="gitignore" value="10" />
-          <entry key="h" value="880" />
+          <entry key="h" value="883" />
           <entry key="md" value="533" />
           <entry key="txt" value="387" />
         </counts>
@@ -58,7 +57,7 @@
           <entry key="Doxygen file" value="6" />
           <entry key="Git file" value="10" />
           <entry key="Markdown" value="533" />
-          <entry key="ObjectiveC" value="8741" />
+          <entry key="ObjectiveC" value="8807" />
           <entry key="PLAIN_TEXT" value="304" />
         </counts>
       </usages-collector>
@@ -67,7 +66,7 @@
           <entry key="Makefile" value="2" />
           <entry key="cbp" value="1" />
           <entry key="conf" value="1" />
-          <entry key="cpp" value="7" />
+          <entry key="cpp" value="8" />
           <entry key="gitignore" value="2" />
           <entry key="h" value="16" />
           <entry key="md" value="3" />
@@ -79,7 +78,7 @@
           <entry key="CMakeLists.txt" value="1" />
           <entry key="Git file" value="2" />
           <entry key="Markdown" value="3" />
-          <entry key="ObjectiveC" value="23" />
+          <entry key="ObjectiveC" value="24" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -87,11 +86,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wrapper.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="207" column="32" lean-forward="true" selection-start-line="207" selection-start-column="32" selection-end-line="207" selection-end-column="32" />
+            <state relative-caret-position="230">
+              <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
               <folding>
                 <element signature="e#41#60#0" expanded="true" />
                 <element signature="e#82#172#0" expanded="true" />
@@ -104,6 +103,7 @@
                 <element signature="e#3831#3846#0" expanded="true" />
                 <element signature="e#4038#4048#0" expanded="true" />
                 <element signature="e#4274#4290#0" expanded="true" />
+                <element signature="e#4933#5224#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/keys.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state relative-caret-position="115">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -127,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wrapper.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            <state relative-caret-position="115">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -147,6 +147,7 @@
       <find>.doc</find>
       <find>endl</find>
       <find>cout</find>
+      <find>unsigned</find>
     </findStrings>
     <replaceStrings>
       <replace>*!\brief</replace>
@@ -174,9 +175,9 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lol.cpp" />
-        <option value="$PROJECT_DIR$/src/wrapper.h" />
         <option value="$PROJECT_DIR$/src/keys.h" />
         <option value="$PROJECT_DIR$/src/wrapper.cpp" />
+        <option value="$PROJECT_DIR$/src/wrapper.h" />
       </list>
     </option>
   </component>
@@ -264,7 +265,7 @@
       <workItem from="1542786411610" duration="1218000" />
       <workItem from="1542800551110" duration="19000" />
       <workItem from="1543335136098" duration="1261000" />
-      <workItem from="1543337597773" duration="6610000" />
+      <workItem from="1543337597773" duration="7661000" />
     </task>
     <task id="LOCAL-00001" summary="rename input to raw_input &amp; hotfix">
       <created>1542786556146</created>
@@ -277,7 +278,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30698000" />
+    <option name="totallyTimeSpent" value="31749000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -292,7 +293,7 @@
     <frame x="49" y="30" width="1871" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988938" visible="true" weight="0.14113125" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988938" visible="true" weight="0.14113125" />
       <window_info id="Structure" order="1" sideWeight="0.5011062" side_tool="true" weight="0.09665019" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -307,7 +308,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002746" side_tool="true" weight="0.33075222" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32964602" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32964602" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32964602" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -403,13 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wrapper.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lol.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -419,15 +413,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/keys.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="115">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wrapper.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="207" column="32" lean-forward="true" selection-start-line="207" selection-start-column="32" selection-end-line="207" selection-end-column="32" />
+        <state relative-caret-position="230">
+          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
           <folding>
             <element signature="e#41#60#0" expanded="true" />
             <element signature="e#82#172#0" expanded="true" />
@@ -440,7 +434,15 @@
             <element signature="e#3831#3846#0" expanded="true" />
             <element signature="e#4038#4048#0" expanded="true" />
             <element signature="e#4274#4290#0" expanded="true" />
+            <element signature="e#4933#5224#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wrapper.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
         </state>
       </provider>
     </entry>

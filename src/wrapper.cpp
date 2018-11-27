@@ -45,9 +45,10 @@ void screen_setup() {
  * @param string c style string that is going to be
  *        printed, must end with a null terminator (\0 char)
  */
-void print(unsigned int x, unsigned int y, const char *string) {
+void print(int x, int y, const char *string) {
     #ifdef __linux__
-        move_cursor(x, y);
+        if(!move_cursor(x, y)) /* something wrong happened in move_cursor */
+            return;
         waddstr(stdscr, string);
     #elif _WIN32
         if(!move_cursor(x, y)) /* something wrong happened in move_cursor */
@@ -63,7 +64,9 @@ void print(unsigned int x, unsigned int y, const char *string) {
  * @param x x axis coord
  * @param y y axis coord
  */
-bool move_cursor(unsigned int x, unsigned int y) {
+bool move_cursor(int x, int y) {
+    if(x < 0 || y < 0)
+        return false;
     #ifdef __linux__
         wmove(stdscr, y, x);
         return true;
