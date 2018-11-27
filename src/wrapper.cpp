@@ -1,5 +1,3 @@
-#include <climits>
-
 #ifdef __linux__
     #include <curses.h>
     #include <unistd.h>
@@ -7,6 +5,7 @@
     #include <windows.h>
     #include <conio.h>
     #include <iostream>
+    #include <climits>
 #endif
 
 #include "wrapper.h"
@@ -112,21 +111,29 @@ void refresh_screen() {
  * ncurses:
  * The method calls clear() that fills screen with blank
  * characters and ensures that on the next refresh the
- * windows is repainted from zero.
+ * window is repainted from zero.
  */
 void clear_screen() {
     #ifdef __linux__
         clear();
     #elif _WIN32
-	CONSOLE_SCREEN_BUFFER_INFO csbi;
-	GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
+        CONSOLE_SCREEN_BUFFER_INFO csbi;
+        DWORD chars_written;
+        GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
         FillConsoleOutputCharacter(
+                GetStdHandle(STD_OUTPUT_HANDLE),
+                (TCHAR) ' ',
+                csbi.dwSize.X * csbi.dwSize.Y,
+                (COORD) {0, 0},
+                &chars_written
+         );
+        FillConsoleOutputAttribute(
                 GetStdHandle(STD_OUTPUT_HANDLE),
                 csbi.wAttributes,
                 csbi.dwSize.X * csbi.dwSize.Y,
                 (COORD) {0, 0},
-                NULL
-         );
+                &chars_written
+        );
 
         move_cursor(0, 0);
     #endif

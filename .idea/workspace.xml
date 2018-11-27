@@ -13,7 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6c4c3aff-7b72-44e9-a41f-5ba27aae0305" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wrapper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrapper.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -28,21 +28,22 @@
     <session id="71465911">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="conf" value="269" />
-          <entry key="cpp" value="6407" />
+          <entry key="cpp" value="6646" />
           <entry key="gitignore" value="10" />
           <entry key="h" value="652" />
           <entry key="md" value="329" />
@@ -55,7 +56,7 @@
           <entry key="Doxygen file" value="6" />
           <entry key="Git file" value="10" />
           <entry key="Markdown" value="329" />
-          <entry key="ObjectiveC" value="7053" />
+          <entry key="ObjectiveC" value="7292" />
           <entry key="PLAIN_TEXT" value="304" />
         </counts>
       </usages-collector>
@@ -87,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
+              <caret column="36" selection-start-column="36" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -104,10 +105,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wrapper.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-704">
+              <caret line="122" column="35" lean-forward="true" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
               <folding>
-                <element signature="e#21#40#0" expanded="true" />
-                <element signature="e#3290#3305#0" expanded="true" />
+                <element signature="e#41#60#0" expanded="true" />
+                <element signature="e#82#172#0" expanded="true" />
+                <element signature="e#3433#3448#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -234,7 +237,8 @@
       <workItem from="1542114619445" duration="1222000" />
       <workItem from="1542786411610" duration="1218000" />
       <workItem from="1542800551110" duration="19000" />
-      <workItem from="1543335136098" duration="801000" />
+      <workItem from="1543335136098" duration="1261000" />
+      <workItem from="1543337597773" duration="351000" />
     </task>
     <task id="LOCAL-00001" summary="rename input to raw_input &amp; hotfix">
       <created>1542786556146</created>
@@ -247,7 +251,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23628000" />
+    <option name="totallyTimeSpent" value="24439000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -262,7 +266,7 @@
     <frame x="49" y="30" width="1871" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19659528" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19879188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -351,16 +355,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sjfhsf.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sjfhsf.cpp" />
     <entry file="file://$PROJECT_DIR$/winapi_ncurses.cbp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-998">
@@ -371,7 +366,7 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -384,10 +379,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wrapper.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-704">
+          <caret line="122" column="35" lean-forward="true" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
           <folding>
-            <element signature="e#21#40#0" expanded="true" />
-            <element signature="e#3290#3305#0" expanded="true" />
+            <element signature="e#41#60#0" expanded="true" />
+            <element signature="e#82#172#0" expanded="true" />
+            <element signature="e#3433#3448#0" expanded="true" />
           </folding>
         </state>
       </provider>
