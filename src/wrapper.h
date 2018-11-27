@@ -3,8 +3,8 @@
 #ifndef WINAPI_NCURSES_LIBRARY_H
 #define WINAPI_NCURSES_LIBRARY_H
     void screen_setup();
-    void print(int x, int y, const char* string);
-    void move_cursor(int x, int y);
+    void print(unsigned int x, unsigned int y, const char* string);
+    void move_cursor(unsigned int x, unsigned int y);
     void change_color(short color);
     void refresh_screen();
     void clear_screen();

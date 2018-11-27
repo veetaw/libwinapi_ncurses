@@ -12,8 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c4c3aff-7b72-44e9-a41f-5ba27aae0305" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wrapper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrapper.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wrapper.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrapper.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -43,9 +44,9 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="conf" value="269" />
-          <entry key="cpp" value="6649" />
+          <entry key="cpp" value="6706" />
           <entry key="gitignore" value="10" />
-          <entry key="h" value="653" />
+          <entry key="h" value="689" />
           <entry key="md" value="533" />
           <entry key="txt" value="387" />
         </counts>
@@ -56,7 +57,7 @@
           <entry key="Doxygen file" value="6" />
           <entry key="Git file" value="10" />
           <entry key="Markdown" value="533" />
-          <entry key="ObjectiveC" value="7296" />
+          <entry key="ObjectiveC" value="7389" />
           <entry key="PLAIN_TEXT" value="304" />
         </counts>
       </usages-collector>
@@ -67,7 +68,7 @@
           <entry key="conf" value="1" />
           <entry key="cpp" value="3" />
           <entry key="gitignore" value="2" />
-          <entry key="h" value="12" />
+          <entry key="h" value="13" />
           <entry key="md" value="3" />
           <entry key="txt" value="1" />
         </counts>
@@ -77,7 +78,7 @@
           <entry key="CMakeLists.txt" value="1" />
           <entry key="Git file" value="2" />
           <entry key="Markdown" value="3" />
-          <entry key="ObjectiveC" value="15" />
+          <entry key="ObjectiveC" value="16" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -88,16 +89,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wrapper.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="32">
+              <caret line="45" column="3" lean-forward="true" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
               <folding>
                 <element signature="e#41#60#0" expanded="true" />
                 <element signature="e#82#172#0" expanded="true" />
+                <element signature="e#1244#1291#0" expanded="true" />
                 <element signature="e#1521#1720#0" expanded="true" />
                 <element signature="e#2846#3487#0" expanded="true" />
                 <element signature="e#3433#3448#0" expanded="true" />
                 <element signature="e#3876#3892#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/wrapper.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -134,14 +145,14 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/sjfhsf.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/wrapper.h" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/wrapper.h" />
         <option value="$PROJECT_DIR$/src/wrapper.cpp" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="49" />
     <option name="y" value="30" />
     <option name="width" value="936" />
@@ -224,7 +235,7 @@
       <workItem from="1542786411610" duration="1218000" />
       <workItem from="1542800551110" duration="19000" />
       <workItem from="1543335136098" duration="1261000" />
-      <workItem from="1543337597773" duration="1420000" />
+      <workItem from="1543337597773" duration="2304000" />
     </task>
     <task id="LOCAL-00001" summary="rename input to raw_input &amp; hotfix">
       <created>1542786556146</created>
@@ -237,7 +248,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25508000" />
+    <option name="totallyTimeSpent" value="26392000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -249,10 +260,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="30" width="936" height="1050" extended-state="4" />
+    <frame x="49" y="30" width="1871" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19864559" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09665019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -346,13 +357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wrapper.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -370,13 +374,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/wrapper.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/wrapper.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="32">
+          <caret line="45" column="3" lean-forward="true" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
           <folding>
             <element signature="e#41#60#0" expanded="true" />
             <element signature="e#82#172#0" expanded="true" />
+            <element signature="e#1244#1291#0" expanded="true" />
             <element signature="e#1521#1720#0" expanded="true" />
             <element signature="e#2846#3487#0" expanded="true" />
             <element signature="e#3433#3448#0" expanded="true" />

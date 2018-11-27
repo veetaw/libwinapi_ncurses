@@ -44,7 +44,7 @@ void screen_setup() {
  * @param string c style string that is going to be
  *        printed, must end with a null terminator (\0 char)
  */
-void print(int x, int y, const char *string) {
+void print(unsigned int x, unsigned int y, const char *string) {
     #ifdef __linux__
         move_cursor(x, y);
         waddstr(stdscr, string);
@@ -61,13 +61,13 @@ void print(int x, int y, const char *string) {
  * @param x x axis coord
  * @param y y axis coord
  */
-void move_cursor(int x, int y) {
+void move_cursor(unsigned int x, unsigned int y) {
     #ifdef __linux__
         wmove(stdscr, y, x);
     #elif _WIN32
         if(x > SHRT_MAX || y > SHRT_MAX)
             return; /* overflow detected, just don't do anything */
-        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), (COORD) {(short) x, (short) y});
+        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), (COORD) {(unsigned short) x, (unsigned short) y});
     #endif
 }
 
