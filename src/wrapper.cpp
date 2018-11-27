@@ -66,8 +66,8 @@ void move_cursor(int x, int y) {
         wmove(stdscr, y, x);
     #elif _WIN32
         if(x > SHRT_MAX || y > SHRT_MAX)
-            return /* overflow detected, just don't do anything */
-        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), (COORD) {(short) x, (short) y})
+            return; /* overflow detected, just don't do anything */
+        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), (COORD) {(short) x, (short) y});
     #endif
 }
 

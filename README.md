@@ -1,9 +1,18 @@
 # Simple and minimal wrapper over ncurses and winAPI
 > ## WIP
 
+### Building
+- #### windows
+    requirements: mingw
+    ```
+    cd path\to\wrapper
+    cmake . -G "MinGW Makefiles"
+    mingw32-make.exe
+    ```
+
 ### Examples:
 
-<h5>print strings to term</h5>
+##### print strings to term
 ```
 screen_setup();
 const char* c_string = "c string";
@@ -16,7 +25,7 @@ getch();
 close_window();
 ```
 
-<h5>print colored strings to term</h5>
+##### print colored strings to term
 ```
 ...
 
