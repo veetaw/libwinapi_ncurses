@@ -11,7 +11,7 @@ if(UNIX AND NOT APPLE) # can't test if it works on mac os
     add_library(winapi_ncurses SHARED src/wrapper.cpp src/wrapper.h src/color.h)
 
     target_link_libraries(winapi_ncurses ${CURSES_LIBRARIES})
-elseif(MSVC OR MSYS OR MINGW)
+elseif(WIN32 AND MINGW) # todo support more windows compilers
     message(STATUS "Windows detected.")
 
     add_library(winapi_ncurses SHARED src/wrapper.cpp src/wrapper.h src/color.h)
