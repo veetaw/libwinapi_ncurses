@@ -16,7 +16,9 @@
  * ncurses:
  * The function sets up a new ncurses screen and calls
  * some ncurses functions in order to suppress the echoing
- * of the pressed keys, hiding cursor and to enable special keys like arrows.
+ * of the pressed keys, hiding cursor and to enable special
+ * keys like arrows. It also calls the nodelay function which
+ * makes getch non blocking.
  *
  * winAPI:
  * no setup needed, just clear the screen.
@@ -26,6 +28,7 @@ void screen_setup() {
         initscr();
         start_color();
         noecho();
+        nodelay(stdscr, true);
         curs_set(0);
         keypad(stdscr, true);
     #elif _WIN32
@@ -54,6 +57,30 @@ void print(int x, int y, const char *string) {
         if(!move_cursor(x, y)) /* something wrong happened in move_cursor */
             return;
         std::cout << string;
+    #endif
+
+    refresh_screen();
+}
+
+/*!\brief Print char to screen
+ *
+ * ncurses, winAPI:
+ * The function moves the cursor (x, y) and then prints
+ * to the screen the char at S(x, y)
+ *
+ * @param x x axis coord
+ * @param y y axis coord
+ * @param c char that is going to be printed
+ */
+void print(int x, int y, const char c) {
+    #ifdef __linux__
+        if(!move_cursor(x, y)) /* something wrong happened in move_cursor */
+            return;
+        waddch(stdscr, c);
+    #elif _WIN32
+        if(!move_cursor(x, y)) /* something wrong happened in move_cursor */
+            return;
+        std::cout << c;
     #endif
 
     refresh_screen();
