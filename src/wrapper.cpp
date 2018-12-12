@@ -199,6 +199,25 @@ void close_window() {
     #endif
 }
 
+/*!\brief Get terminal window size (max X and max Y)
+ *
+ * winAPI:
+ * code from https://stackoverflow.com/questions/6812224/getting-terminal-size-in-c-for-windows/12642749#12642749
+ */
+term_size get_term_size() {
+    term_size ts;
+    #ifdef __linux__
+        getmaxyx(stdscr, ts.height, ts.width);
+    #elif _WIN32
+        CONSOLE_SCREEN_BUFFER_INFO csbi;
+        GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
+        ts.height = csbi.srWindow.Right - csbi.srWindow.Left + 1;
+        ts.width = csbi.srWindow.Bottom - csbi.srWindow.Top + 1;
+    #endif
+    
+    return ts;
+}
+
 /*!\brief cross platform sleep
  *
  * @param ms milliseconds to sleep
