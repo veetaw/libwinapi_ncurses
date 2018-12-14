@@ -211,7 +211,7 @@ term_size get_term_size() {
     #elif _WIN32
         CONSOLE_SCREEN_BUFFER_INFO csbi;
         GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
-        ts.with = csbi.srWindow.Right - csbi.srWindow.Left + 1;
+        ts.width = csbi.srWindow.Right - csbi.srWindow.Left + 1;
         ts.height = csbi.srWindow.Bottom - csbi.srWindow.Top + 1;
     #endif
     
